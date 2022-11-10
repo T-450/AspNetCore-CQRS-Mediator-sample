@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using AspNetSample.Application;
 using AspNetSample.Application.Todos;
 using Mediator;
 using Microsoft.AspNetCore.Mvc;

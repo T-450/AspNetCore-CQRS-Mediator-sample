@@ -1,3 +1,6 @@
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 using Mediator;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -72,9 +75,10 @@ public sealed class PingValidator : IPipelineBehavior<Ping, Pong>
     {
         Console.WriteLine("2) Running ping validator");
         if (request is null || request.Id == default)
+        {
             throw new ArgumentException("Invalid input");
-        else
-            Console.WriteLine("3) Valid input!");
+        }
+        Console.WriteLine("3) Valid input!");
 
         return next(request, cancellationToken);
     }

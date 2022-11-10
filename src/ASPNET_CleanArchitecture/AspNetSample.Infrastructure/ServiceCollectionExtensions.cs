@@ -1,4 +1,3 @@
-using AspNetSample.Application;
 using AspNetSample.Application.Todos;
 using Microsoft.Extensions.DependencyInjection;
 

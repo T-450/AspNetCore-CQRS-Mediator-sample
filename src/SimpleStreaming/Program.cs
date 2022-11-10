@@ -1,10 +1,10 @@
-using Mediator;
-using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
+using Mediator;
+using Microsoft.Extensions.DependencyInjection;
 
 var services = new ServiceCollection();
 
@@ -43,7 +43,7 @@ public sealed class PingHandler : IStreamRequestHandler<StreamPing, Pong>
         [EnumeratorCancellation] CancellationToken cancellationToken
     )
     {
-        for (int i = 0; i < 5; i++)
+        for (var i = 0; i < 5; i++)
         {
             await Task.Delay(1000, cancellationToken);
             yield return new Pong(request.Id);

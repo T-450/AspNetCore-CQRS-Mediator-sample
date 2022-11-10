@@ -5,13 +5,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="FluentValidation" Version="10.1.0" />
-        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(DotNetVersion)" />
-        <PackageReference Include="OneOf" Version="3.0.178" />
+        <PackageReference Include="FluentValidation" Version="10.1.0"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="$(DotNetVersion)"/>
+        <PackageReference Include="OneOf" Version="3.0.178"/>
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\AspNetSample.Domain\AspNetSample.Domain.csproj" />
+        <ProjectReference Include="..\AspNetSample.Domain\AspNetSample.Domain.csproj"/>
     </ItemGroup>
 
 </Project>
